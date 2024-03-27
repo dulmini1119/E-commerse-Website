@@ -3,7 +3,7 @@ import { NavLink,Link } from 'react-router-dom'
 import logo from '../images/logo.jpg'
 import { BsSearch } from 'react-icons/bs';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart,faArrowsRotate,faUser, faCartShopping } from '@fortawesome/free-solid-svg-icons';
+import { faHeart,faArrowsRotate,faUser, faCartShopping,faTh } from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -99,13 +99,32 @@ const Header = () => {
       <div className='container-xxl'>
         <div className='row'>
           <div className='col-12'>
-            <div className='menu-bottom d-flex align-items-center'>
-              <div></div>
+            <div className='menu-bottom d-flex align-items-center gap-30'>
+              <div>
+              <div className="dropdown">
+              <button className="btn btn-secondary dropdown-toggle bg-transparent border-0 gap-15 me-5 d-flex align-items-center" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              <span><FontAwesomeIcon icon={faTh} /></span>
+              Shop Categories
+              </button>
+            <ul className="dropdown-menu"aria-labelledby="dropdownMenuButton1" >
+              <li><Link className="dropdown-item text-white" to="">Home</Link></li>
+              <li><Link className="dropdown-item text-white" to="">Our Store</Link></li>
+              <li><Link className="dropdown-item text-white" to="">Brands</Link></li>
+              <li><Link className="dropdown-item text-white" to="">Blogs</Link></li>
+              <li><Link className="dropdown-item text-white" to="">Videos</Link></li>
+              <li><Link className="dropdown-item text-white" to="">Catalogues</Link></li>
+              <li><Link className="dropdown-item text-white" to="/contact">Contact</Link></li>
+            </ul>
+              </div>
+              </div>
               <div className='menu-links'>
                 <div className='d-flex align-items-center gap-15'>
                   <NavLink to='/'>Home</NavLink>
                   <NavLink to='/'>Our Store</NavLink>
+                  <NavLink to='/'>Brands</NavLink>
                   <NavLink to='/'>Blogs</NavLink>
+                  <NavLink to='/'>Videos</NavLink>
+                  <NavLink to='/'>Catalogues</NavLink>
                   <NavLink to='/contact'>Contact</NavLink>
                 </div>
               </div>
