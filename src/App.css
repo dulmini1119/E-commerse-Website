@@ -1,3 +1,4 @@
+/* Header */
 *{
     margin: 0;
     padding: 0;
@@ -74,25 +75,61 @@ a{
     background-color: transparent;
     color: var(--color-e1ad21) !important;
 }
-@media (min-width: 576px) {
-    .header-upper .header-upper-links img {
-        width: 35px;
-        height: 35px;
-    }
-    .header-upper .header-upper-links a {
-        font-size: 16px;
-        line-height: 20px;
-    }
+@media screen and (max-width: 768px) {
+  .header-upper .col-2 {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .header-upper .col-5 {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  
+
+  .header-bottom .menu-bottom {
+    flex-direction: column;
+  }
+
+  .header-bottom .menu-links {
+    display: none; /* Hide the menu links */
+  }
 }
-@media (max-width: 575.98px) {
-    .header-upper .header-upper-links img {
-        width: 30px;
-        height: 30px;
+@media screen and (max-width: 768px) {
+    .header-upper .col-5 .header-upper-links.mobile-icons {
+      display: flex;
+      justify-content: flex-end;
     }
-    .header-upper .header-upper-links a {
-        font-size: 14px;
-        line-height: 18px;
+  
+    .header-upper .col-5 .header-upper-links.mobile-icons span {
+      margin-left: 10px; /* Add space between icons */
+      cursor: pointer; /* Add pointer cursor for better UX */
     }
+  
+    .header-upper .col-5 .header-upper-links.mobile-icons span:last-child {
+      margin-right: 0; /* Remove right margin for the last icon */
+    }
+  }
+  
+
+/* Header end */
+/* Fotter */
+
+footer{
+    background-color: var(--color-232f3e);
+}
+footer:not(:first-child){
+    border-top: 1-x solid rgba(255,255,255,0.1);
 }
 
-
+footer .input-group{
+    background-color: var(--color-131921);
+    color: white;
+    padding: 8px 17px;
+}
