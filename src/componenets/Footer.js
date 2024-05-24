@@ -1,5 +1,6 @@
 import React from 'react'
 import newsletter from '../images/newsletter.png'
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -37,22 +38,49 @@ const Footer = () => {
         <div className='row'>
           <div className='col-4'>
             <h4 className='text-white nb-4'>Information</h4>
-            <div></div>
+            <div className='footer-links d-flex flex-column'>
+            <Link className='text-white py-2 nb-1'>Privacy Policy</Link>
+            <Link className='text-white py-2 nb-1'>Refund Policy</Link>
+            <Link className='text-white py-2 nb-1'>Terms & Conditions</Link>
+            <Link className='text-white py-2 nb-1'>Blogs</Link>
+          </div>
           </div>
 
           <div className='col-3'>
           <h4 className='text-white nb-4'>Contact Us</h4>
-          <div></div>
+          <div>
+            <address className='text-white'>
+              130/2A, <br/> Colombo Road, Galle
+            </address>
+            <a href='tel:+94712345678' className='text-white mt-4 d-block mb-2'>+94712345678</a>
+            <a href='mailto:yelz&blizz@gmail.com' className='mt-4 d-block mb-2 text-white'>
+              yelz&blizz@gmail.com
+            </a>
+            <div className='social_icons text-white'>
+             
+            </div>
+          </div>
           </div>
 
           <div className='col-3'>
           <h4 className='text-white nb-4'>Accounts</h4>
-          <div></div>
+          <div className='footer-links d-flex flex-column'>
+            <Link className='text-white py-2 nb-1'>Delivery Information</Link>
+            <Link className='text-white py-2 nb-1'>About Us</Link>
+            <Link className='text-white py-2 nb-1'>FAQs</Link>
+            <Link className='text-white py-2 nb-1'>Contact Us</Link>
+          </div>
           </div>
 
           <div className='col-2'>
           <h4 className='text-white nb-4'>Quick Links</h4>
-          <div></div>
+          <div className='footer-links d-flex flex-column'>
+            <Link className='text-white py-2 nb-1'>Makup</Link>
+            <Link className='text-white py-2 nb-1'>Skin Care</Link>
+            <Link className='text-white py-2 nb-1'>Hair Care</Link>
+            <Link className='text-white py-2 nb-1'>Sun & Tan</Link>
+            <Link className='text-white py-2 nb-1'>Gift Sets</Link>
+          </div>
           </div>
         </div>
       </div>
