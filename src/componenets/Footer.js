@@ -2,6 +2,8 @@ import React from 'react'
 import newsletter from '../images/newsletter.png'
 import { Link } from 'react-router-dom';
 
+import { FaInstagram,FaFacebook,FaTwitter,FaLinkedin } from "react-icons/fa6";
+
 const Footer = () => {
   return (
     <>
@@ -50,14 +52,17 @@ const Footer = () => {
           <h4 className='text-white nb-4'>Contact Us</h4>
           <div>
             <address className='text-white'>
-              130/2A, <br/> Colombo Road, Galle
+              130/2A, <br/> Colombo Road, <br/>Galle
             </address>
-            <a href='tel:+94712345678' className='text-white mt-4 d-block mb-2'>+94712345678</a>
-            <a href='mailto:yelz&blizz@gmail.com' className='mt-4 d-block mb-2 text-white'>
+            <a href='tel:+94712345678' className='text-white mt-3 d-block mb-1'>+94712345678</a>
+            <a href='mailto:yelz&blizz@gmail.com' className='mt-2 d-block mb-0 text-white'>
               yelz&blizz@gmail.com
             </a>
-            <div className='social_icons text-white'>
-             
+            <div className='social_icons text-white d-flex align-items-center gap-30 mt-4'>
+             <a href='instagram.com' className='text-white'><FaInstagram  className='fs-4'/></a>
+             <a href='facebook.com' className='text-white'><FaFacebook className='fs-4'/></a>
+             <a href='twitter.com' className='text-white'><FaTwitter className='fs-4'/></a>
+             <a href='linkedin.com' className='text-white'><FaLinkedin className='fs-4'/></a>
             </div>
           </div>
           </div>
