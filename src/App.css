@@ -9,6 +9,7 @@
     --color-131921 : #131921;
     --color-e1ad21 : #e1ad21;
     --color-232f3e : #232f3e;
+    --color-bf4800 : #bf4800;
 }
 body{
     font-family: "Mukta Malar", sans-serif;
@@ -25,6 +26,17 @@ body{
 }
 .gap-30{
     gap: 30px;
+}
+.button{
+    background-color: var(--color-232f3e);
+    color: white;
+    padding: 13px 33px;
+    font-size: 14px;
+    border-radius: 25px;
+}
+.button:hover{
+    background-color: var(--color-e1ad21);
+    color: #131921;
 }
 a{
     text-decoration: none;
@@ -132,4 +144,60 @@ footer .input-group{
     background-color: var(--color-131921);
     color: white;
     padding: 8px 17px;
+}
+
+/*Home page */
+.main-banner-content{
+    top:10%;
+    left: 5%;
+}
+.main-banner-content h4{
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--color-bf4800);
+    margin: 0 0 12px;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+}
+.main-banner-content h5{
+    font-size: 42px;
+    line-height: 54px;
+    letter-spacing: -2px;
+    font-weight: 500;
+    text-transform: none;
+}
+.main-banner-content p{
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.4;
+    color: var(--color-131921);
+}
+
+
+.small-banner-content{
+    top:10%;
+    left: 5%;
+}
+.small-banner-content h4{
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--color-bf4800);
+    margin: 0 0 12px;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+}
+.small-banner-content h5{
+    font-size: 42px;
+    line-height: 54px;
+    letter-spacing: -2px;
+    font-weight: 500;
+    text-transform: none;
+}
+.small-banner-content p{
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.4;
+    color: var(--color-131921);
 }
