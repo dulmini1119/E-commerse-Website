@@ -1,4 +1,5 @@
 import React from 'react'
+import Marquee from "react-fast-marquee";
 import display from '../images/display.jpg';
 import makup from '../images/makup.jpg';
 import frag from '../images/frag.jpg';
@@ -14,8 +15,19 @@ import facecare from '../images/facecare.jpg';
 import vitamins from '../images/vitamins.jpg'
 import skincaremen from '../images/skincaremen.jpg'
 import ColorCosmetics from '../images/ColorCosmetics.jpg';
-
+import motherbaby from '../images/motherbaby.jpg';
+import Gifts from '../images/Gifts.jpg';
+import feature1 from '../images/feature1.jpg'
+import feature2 from '../images/feature2.webp'
+import feature3 from '../images/feature3.jpg'
+import feature4 from '../images/feature4.jpg'
+import feature5 from '../images/feature5.jpg'
+import feature6 from '../images/feature6.jpg'
+import feature7 from '../images/feature7.jpg'
+import feature8 from '../images/feature8.jpg'
+import feature9 from '../images/feature9.jpg'
 import { Link } from 'react-router-dom';
+import BlogCard from '../componenets/BlogCard';
 
 const Home = () => {
   return (
@@ -129,13 +141,13 @@ const Home = () => {
       <div className='container-xxl'>
         <div className='row'>
           <div className='col-12'>
-            <div className='categories d-flex justify-content-between align-items-center'>
+            <div className='categories d-flex justify-content-between flex-wrap align-items-center'>
 
             <div className='d-flex gap-30 align-items-center'>
               <div>
                 <img src={fragrance} alt='fragrance' style={{width:'50%', height: 'auto', borderRadius:'50%'}}/>
                 <h6>Fragrance</h6>
-                <p>31 products</p>
+                <p>34 products</p>
               </div>
             </div>
 
@@ -159,7 +171,7 @@ const Home = () => {
               <div>
                 <img src={vitamins} alt='fragrance' style={{width:'50%', height: 'auto', borderRadius:'50%'}}/>
                 <h6>Vitamins & Supplyments</h6>
-                <p>31 products</p>
+                <p>85 products</p>
               </div>
             </div>
 
@@ -170,12 +182,99 @@ const Home = () => {
                 <p>31 products</p>
               </div>
             </div>
+
+            <div className='d-flex gap-30 align-items-center'>
+              <div>
+                <img src={motherbaby} alt='fragrance' style={{width:'50%', height: 'auto', borderRadius:'50%'}}/>
+                <h6>Mother & Baby</h6>
+                <p>31 products</p>
+              </div>
+            </div>
+
+            <div className='d-flex gap-30 align-items-center'>
+              <div>
+                <img src={Gifts} alt='fragrance' style={{width:'50%', height: 'auto', borderRadius:'50%'}}/>
+                <h6>Gifts</h6>
+                <p>7 products</p>
+              </div>
+            </div>
             
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <section className='marque-wrapper py-5'>
+    <div className='container-xxl'>
+      <div className='row'>
+        <div className='col-12'>
+      <h3 className='section-heading'>Featured Brands</h3>
+
+          <div className='marquee inner-wrapper card-wrapper'>
+          <Marquee className='d-flex'>
+           
+            <div className='mx-4 w-25'>
+              <img src={feature1} alt='brand'/>
+            </div>
+
+            <div className='mx-4 w-25'>
+              <img src={feature2} alt='brand'/>
+            </div>
+
+            <div className='mx-4 w-25'>
+              <img src={feature3} alt='brand'/>
+            </div>
+
+            <div className='mx-4 w-25'>
+              <img src={feature4} alt='brand'/>
+            </div>
+
+            <div className='mx-4 w-25'>
+              <img src={feature5} alt='brand'/>
+            </div>
+
+            <div className='mx-4 w-25'>
+              <img src={feature6} alt='brand'/>
+            </div>
+
+            <div className='mx-4 w-25'>
+              <img src={feature7} alt='brand'/>
+            </div>
+
+            <div className='mx-4 w-25'>
+              <img src={feature8} alt='brand'/>
+            </div>
+
+            <div className='mx-4 w-25'>
+              <img src={feature9} alt='brand'/>
+            </div>
+
+          </Marquee>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <section className='blog-wrapper py-5 home-wrapper-2'>
+
+      <div className='container-xxl'>
+        <div className='row'>
+
+        <div className='col-12'>
+          <h3 className='section-heading'>The Beauty Blog</h3>
+        </div>
+
+          <BlogCard/>
+          
+
+          </div>
+        </div>
+     
+
+    </section>
+    
     </>
   )
 }
