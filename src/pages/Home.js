@@ -28,6 +28,7 @@ import feature8 from '../images/feature8.jpg'
 import feature9 from '../images/feature9.jpg'
 import { Link } from 'react-router-dom';
 import BlogCard from '../componenets/BlogCard';
+import ProductCard from '../componenets/ProductCard';
 
 const Home = () => {
   return (
@@ -263,9 +264,9 @@ const Home = () => {
     <div className='row'>
 
     <div className='col-12'>
-    <h3 className='section-heading'>The Beauty Blog</h3>
+    <h3 className='section-heading'>Selected Products</h3>
     </div>
-    <BlogCard/>
+    <ProductCard/>
     </div>
     </div>
     </section>
