@@ -29,6 +29,7 @@ import feature9 from '../images/feature9.jpg'
 import { Link } from 'react-router-dom';
 import BlogCard from '../componenets/BlogCard';
 import ProductCard from '../componenets/ProductCard';
+import SpecialProduct from '../componenets/SpecialProduct';
 
 const Home = () => {
   return (
@@ -258,7 +259,7 @@ const Home = () => {
     </div>
     </section>
 
-    <section className='blog-wrapper py-5 home-wrapper-2'>
+    <section className='featured-wrapper py-5 home-wrapper-2'>
 
     <div className='container-xxl'>
     <div className='row'>
@@ -269,6 +270,19 @@ const Home = () => {
     <ProductCard/>
     </div>
     </div>
+    </section>
+
+    <section className='special-wrapper py-5 home-wrapper-2'>
+      <div className='container-xxl'>
+        <div className='row'>
+          <div className='col-12'>
+            <h3 className='section-heading'>Special Offers</h3>
+          </div>
+        </div>
+        <div className='row'>
+          <SpecialProduct/>
+        </div>
+      </div>
     </section>
 
     <section className='blog-wrapper py-5 home-wrapper-2'>

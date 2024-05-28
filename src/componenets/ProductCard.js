@@ -54,6 +54,7 @@ const ProductCard = ({image,brand,producttitle,price,value}) => {
 
         <div className='product-image'>
           <img src={image} alt='product' className='image-fluid'/>
+          
         </div>
         <div className='product-details'>
           <h5 className='brand'>{brand}</h5>
